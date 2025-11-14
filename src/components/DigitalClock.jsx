@@ -58,11 +58,14 @@ const DigitalClock = () => {
     // }, 1000);
 
   return (
-    <div className="p-8 mx-auto my-auto flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <>
+    <div className="bg-gradient-to-br from-purple-600 via-indigo-400 to-pink-400 animate-gradient-x">
+    <div className="p-8 mx-auto my-auto flex flex-col items-center justify-center h-180">
         {/* Digital Clock Component */}
 
-        <h2 className="text-2xl font-bold mb-4">Digital Alarm Clock</h2>
-        <div className="container h-48 w-96 border p-4 rounded-lg shadow-md">
+        <h2 className="text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-pink-200">Digital Alarm Clock</h2>
+        <h3 className="text-2xl font-bold mb-4 bg-clip-text text-rose-400 dark:text-pink-200">Your Study Reminder</h3>
+        <div className="container h-48 w-96 border p-4 rounded-lg shadow-md bg-white/30 backdrop-blur-md border border-white/20">
           <div className="flex items-center justify-center h-full bg-white rounded-lg">
             <span className="text-5xl font-bold">{time.toLocaleTimeString("it-IT")}</span>
           </div>
@@ -84,7 +87,9 @@ const DigitalClock = () => {
 
           {isAlarmSet && alarmTime && (
             <>
-            <p className="mt-4 text-green-600">Alarm set for: {alarmTime}</p>
+            <p className="text-green-400 font-bold drop-shadow-md animate-pulse">
+              Alarm set for: {alarmTime}
+            </p>
             </>
           )}
 
@@ -100,6 +105,9 @@ const DigitalClock = () => {
         </div>
 
     </div>
+
+    </div>
+    </>
   )
 }
 
