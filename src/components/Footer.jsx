@@ -6,7 +6,7 @@ const Footer = () => {
   <footer className="bg-white/20 backdrop-blur-md text-white border-t border-white/30">
     <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
       <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <img src="/public/Kriti-Pansari.jpg" className="w-20 h-20 text-white p-2 rounded-full" alt="Kriti Pansari"/>
+        <img src="/public/assets/Kriti-Pansari.jpg" className="w-20 h-20 text-white p-2 rounded-full" alt="Kriti Pansari"/>
         <span className="ml-3 text-xl">Kriti Pansari</span>
       </a>
 
